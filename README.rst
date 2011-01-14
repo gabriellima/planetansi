@@ -14,7 +14,27 @@ Maiores informações sobre o NSI em http://nsi.iff.edu.br
 
 
 Como instalar
---------------
+-------------
 
-A gem `feedzirra` requer a instalação do pacote `libcurl3-dev`.
+Supondo que você tenha o Ruby instalado (com RVM ou não)::
+
+
+    $ apt-get install openssl libreadline5 libreadline-dev zlib1g zlib1g-dev libssl-dev sqlite3 libsqlite3-0 libsqlite3-dev libxml2-dev libxslt1-dev libcurl3-dev
+
+    $ gem install bundler --no-ri --no-rdoc
+
+    $ bundle install
+
+
+
+Como rodar testes
+-----------------
+
+Testes de aceitação::
+
+    $ cucumber
+
+Testes de unidade::
+
+    $ rspec spec
 
